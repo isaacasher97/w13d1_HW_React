@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* CSS FOR Header.js */
+/* ----------------- */
+
+.navBar {
+  display: flex;
+  background-color: burlywood;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+.navAnchor {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-around;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.navAnchor:hover {
+  text-decoration: underline;
+}
