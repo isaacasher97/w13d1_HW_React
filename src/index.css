@@ -34,3 +34,101 @@ code {
 .navAnchor:hover {
   text-decoration: underline;
 }
+
+/* CSS FOR Projects.js */
+/* ----------------- */
+
+.projectCard {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background: #005E9B;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+.profileName {
+  font-size: 2rem;
+}
+
+.profileName::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 2em;
+  background: #5bcbf0;
+  margin: 0.7em auto 0.5em;
+  opacity: 0.35;
+}
+ 
+.profilePosition {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.875rem;
+  color: #5bcbf0;
+}
+
+.profileBody {
+  font-weight: 300;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+.projectImg{
+  width: 150px;
+  height: 150px;
+  border-radius: 25%;
+  border: 4px solid white;
+}
+
+.socialLinks {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.socialLink {
+  color: #5bcbf0;
+  opacity: 0.5;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.125rem;
+}
+
+.socialLink:hover,
+.socialLink:focus {
+  opacity: 1;
+} 
+
+.mainContainer {
+  display: flex;
+  margin: 2em auto;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 600px) {
+  .projectCard {
+    flex-direction: row;
+  }
+  .profileSidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .profileMain {
+    text-align: left;
+    margin-left: 2em;
+  }
+
+  .profileName:after {
+    margin-left: 0;
+  }
+}
